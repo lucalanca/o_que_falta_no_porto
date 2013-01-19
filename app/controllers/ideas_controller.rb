@@ -2,7 +2,7 @@ class IdeasController < ApplicationController
   # GET /ideas
   # GET /ideas.json
   def index
-    @ideas = Idea.all
+    @ideas = Idea.plusminus_tally
     @idea = Idea.new
 
     respond_to do |format|

@@ -1,5 +1,5 @@
 OQueFaltaNoPorto::Application.routes.draw do
-  resources :ideas do
+  resources :ideas, :only => [:index] do
     post 'thumbs_up', :on => :member
     post 'thumbs_down', :on => :member
   end

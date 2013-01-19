@@ -15,10 +15,10 @@
   <% @ideas.each do |idea| %>
     <tr>
       <td style="position: relative;">
-        <%= link_to idea do %>
+        <%#= link_to idea do %>
           <h2><%= idea.description %></h2>
-        <% end %>
-        <p><small>2 comentários</small></p>
+        <%# end %>
+        <p><small>idea sugerida a <%= idea.created_at.strftime("%d/%m/%Y") %></small></p>
         <div class="right-zone">
           <p style="text-align: right; margin: 0;line-height: 80px; font-size: 22px;">
             <a href="#" class="idea-thumbs-down" data-idea="<%= idea.id %>"><span class="vote-link">-</span></a>

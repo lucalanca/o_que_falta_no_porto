@@ -8,6 +8,7 @@ class Idea < ActiveRecord::Base
 
   #RELATIONS
   acts_as_voteable
+  acts_as_commentable
 
   def thumbs_up
   	User.guest.vote_for(self)

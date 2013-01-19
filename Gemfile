@@ -46,3 +46,4 @@ end
 gem 'thumbs_up'
 gem 'normalize-rails'
 gem 'simple_form'
+gem 'acts_as_commentable_with_threading'
