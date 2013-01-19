@@ -21,9 +21,9 @@
         <p><small>2 comentários</small></p>
         <div class="right-zone">
           <p style="text-align: right; margin: 0;line-height: 80px; font-size: 22px;">
-            <a href="#"><span class="vote-link">-</span></a>
-             <strong><%= idea.plusminus %></strong>
-             <a href="#"><span class="vote-link">+</span></a>
+            <a href="#" class="idea-thumbs-down" data-idea="<%= idea.id %>"><span class="vote-link">-</span></a>
+             <strong data-plusminus-id="<%= idea.id %>"><%= idea.plusminus %></strong>
+             <a href="#" class="idea-thumbs-up" data-idea="<%= idea.id %>"><span class="vote-link">+</span></a>
            </p>
         </div>
       </td>

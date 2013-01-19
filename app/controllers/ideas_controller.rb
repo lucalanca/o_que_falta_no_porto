@@ -35,18 +35,34 @@ class IdeasController < ApplicationController
     end
   end
 
-  # # POST /ideas/1/thumbs_up
-  # def thumbs_up
-  # 	@idea = Idea.find(params[:id])
-  #   if @idea.thumbs_up
-  #       render :json => @posts, :status 200
-  #   else
-  #       format.html { render action: "edit" }
-  #   end
-  # end
+  # POST /ideas/1/thumbs_up
+  def thumbs_up
+  	@idea = Idea.find(params[:id])
 
-  # # POST /ideas/1/thumbs_up
-  # def thumbs_down
-  	
-  # end
+    if @idea.thumbs_up
+      respond_to do |format|
+        format.json{ render json: @idea, status: 200 }
+      end
+    else
+      respond_to do |format|
+        format.json{ render json: @idea, status: 500 }
+      end
+    end
+  end
+
+  # POST /ideas/1/thumbs_up
+  def thumbs_down
+    @idea = Idea.find(params[:id])
+    logger.debug params.to_s
+    logger.debug "THUMBS DOWN #{@idea.to_s}"
+    if @idea.thumbs_down
+      respond_to do |format|
+        format.json{ render json: @idea, status: 200 }
+      end
+    else
+      respond_to do |format|
+        format.json{ render json: @idea, status: 500 }
+      end
+    end
+  end
 end

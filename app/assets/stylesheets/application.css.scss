@@ -5,15 +5,26 @@
 @import "typography";
 @import "forms";
 
+
+body, html {
+ height: 100%;
+ padding: 0;
+}
+
+
 .colored-wrapper {
 	width: 100%;
-	height: 500px;
 	overflow: hideen;
 	background: $c1;
 }
 
+.full-height {
+	height: 100%;
+}
+
 .header {
 	width: 80%;
+	height: 800px;
 	margin: 0 auto;
 	padding: 50px 0;
 }
@@ -21,3 +32,11 @@
 .right-zone {padding: 0 5px; width: 10%; height: 100%; position: absolute; right: 0; top: 0;}
 
 .vote-link { font-size: 1.2em; }
+
+.box {
+	width: 80%;
+	padding: 15px;
+	margin: 50px auto;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	background: white;
+}
