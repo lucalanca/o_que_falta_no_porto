@@ -1,5 +1,9 @@
 OQueFaltaNoPorto::Application.routes.draw do
-  resources :ideas
+  resources :ideas do
+    post 'thumbs_up', :on => :member
+    post 'thumbs_down', :on => :member
+  end
+
 
 
   # The priority is based upon order of creation:
