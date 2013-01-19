@@ -1,15 +1,16 @@
 require 'spec_helper'
 
 describe Idea do
-	let!(:idea) { Factory.create(:idea) }
-	let!(:empty_idea) { Factory.create(:empty_idea) }
+	let!(:idea) { FactoryGirl.create(:idea) }
+
+	it { should validate_presence_of(:description) }
+	it { should validate_uniqueness_of(:description) }
 
 	it "should have valid factory" do
 		idea.should be_valid
-		empty.should_not be_valid
 	end
 
-	it "is valid witho a description" do
+	it "is valid with a description" do
 		idea.should be_valid
 	end
 end
