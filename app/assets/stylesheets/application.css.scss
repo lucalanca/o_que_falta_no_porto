@@ -1,0 +1,23 @@
+@import "compass";
+@import "normalize-rails";
+@import "grid";
+@import "colors";
+@import "typography";
+@import "forms";
+
+.colored-wrapper {
+	width: 100%;
+	height: 500px;
+	overflow: hideen;
+	background: $c1;
+}
+
+.header {
+	width: 80%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.right-zone {padding: 0 5px; width: 10%; height: 100%; position: absolute; right: 0; top: 0;}
+
+.vote-link { font-size: 1.2em; }

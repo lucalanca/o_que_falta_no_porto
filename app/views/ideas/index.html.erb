@@ -1,21 +1,37 @@
-<h1>Listing ideas</h1>
+<section class="colored-wrapper">
+  <section class="grid-wrapper">
+    <article class="header">
+      <h1>O que falta no Porto?</h1>
+      <%= render 'form' %>
+      <p id="notice"><%= notice %></p>
+    </article>
+    
+  </section>
+  
+</section>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<section class="grid-wrapper">
+  <table>
+  <% @ideas.each do |idea| %>
+    <tr>
+      <td style="position: relative;">
+        <%= link_to idea do %>
+          <h2><%= idea.description %></h2>
+        <% end %>
+        <p><small>2 comentários</small></p>
+        <div class="right-zone">
+          <p style="text-align: right; margin: 0;line-height: 80px; font-size: 22px;">
+            <a href="#"><span class="vote-link">-</span></a>
+             <strong><%= idea.plusminus %></strong>
+             <a href="#"><span class="vote-link">+</span></a>
+           </p>
+        </div>
+      </td>
 
-<% @ideas.each do |idea| %>
-  <tr>
-    <td><%= link_to 'Show', idea %></td>
-    <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
-    <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Idea', new_idea_path %>
+      <!-- <td><%#= link_to 'Show', idea %></td>
+      <td>
+      <td><%#= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+    </tr>
+  <% end %>
+  </table>
+</section>

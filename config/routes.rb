@@ -3,8 +3,7 @@ OQueFaltaNoPorto::Application.routes.draw do
     post 'thumbs_up', :on => :member
     post 'thumbs_down', :on => :member
   end
-
-
+  root :to => 'ideas#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
