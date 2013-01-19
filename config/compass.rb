@@ -1,5 +1,13 @@
-# Require any additional compass plugins here.
 project_type = :rails
-http_path    = '/'
-css_dir      = 'tmp/stylesheets'
-sass_dir     = 'app/views/stylesheets'
+project_path = Compass::AppIntegration::Rails.root
+
+http_path = "/"
+
+environment = Compass::AppIntegration::Rails.env
+if environment == 'production'
+  css_dir = "tmp/stylesheets"
+  sass_dir = "app/views/stylesheets"
+else
+  css_dir = "public/stylesheets"
+  sass_dir = "app/stylesheets"
+end
