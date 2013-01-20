@@ -17,11 +17,16 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-  gem "compass-rails"
+  # gem "compass-rails"
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
+
+group :production do
+	gem 'cloudfoundry-jquery-rails'
+	# gem 'cloudfoundry-devise', :require => 'devise'
+end
 
 group :test do
   gem "rspec-rails", "~> 2.0"
@@ -47,3 +52,4 @@ gem 'thumbs_up'
 gem 'normalize-rails'
 gem 'simple_form'
 gem 'acts_as_commentable_with_threading'
+gem 'bourbon'
