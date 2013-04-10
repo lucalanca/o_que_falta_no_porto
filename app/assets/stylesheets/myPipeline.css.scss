@@ -23,8 +23,8 @@ $headerH: 600px;
 .image2 { @include imageBackground("./6-blur.png") }
 
 .header { 
-	@include pad(2,2,12); @include span-columns(8,12); margin: $headerH*0.4 auto; 
-	img { display:block; margin:auto; } 
+	@include pad(2,2,12); @include span-columns(8,12); margin: $headerH*0.2 auto; 
+	img { display:block; margin: 30px auto; } 
 }
 
 .sponsor { @include span-columns(3,12); margin-top: 5px; margin-bottom: 5px;}
