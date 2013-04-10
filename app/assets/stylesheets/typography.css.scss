@@ -1,43 +1,22 @@
-// $base-font-size: 16px;
-// $base-line-height: 24px;
-// @include establish-baseline;
+$base-font-size: 28px;
+$base-line-height: 42px;
+@include establish-baseline;
 
-//@import url(http://fonts.googleapis.com/css?family=Lato:900);
-//@import url(http://fonts.googleapis.com/css?family=Oswald:700);
-@import url(http://fonts.googleapis.com/css?family=Lora:400,400italic);
-@import url(http://fonts.googleapis.com/css?family=Amaranth:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 
-* {
-	-webkit-margin-before: 0em;
-	-webkit-margin-after: 0em;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
-}
 
 h1, h2, h3, h4, h5, h6 {
-	// font-family: 'Lato', sans-serif;
-	// font-family: 'Oswald', sans-serif;
-	font-family: 'Amaranth', sans-serif;
-	font-weight: 700;
+	font-weight: 900;
 	color: #333;
-	margin-top: 1.5em;
-	margin-bottom: 0.25em;
+	margin-top: 50px;
 }
-
-h1 {
-	font-size: 68px;
-	line-height: 72px;
-	color: white;
-	text-shadow: -4px 4px 0px #3b679e;
-	text-align: center;
-
+p {
+	font-weight: 100;
+	color: #222;	
 }
-
 body {
-	//font-family: 'Lora', serif; 
-	font-family: 'Amaranth', sans-serif;
-	font-weight: 400;
-	color: #666;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;;
 }
 p small { font-variant: small-caps; color: #666; }
 
@@ -49,10 +28,17 @@ td {
 	}
 }
 
+.orange { color: $c51;}
+.white {color:white;}
+.black { color: black; }
+.text-no-margin { margin-top: 0;}
 
-$base-font-size: 18px;
-$base-line-height: 28px;
-@include establish-baseline;
+p {
+	strong { font-weight: 400;}
+	em { color: $c63; font-weight: 400; font-style: none;}
+}
+* {-webkit-margin-before: 0em; -webkit-margin-after: 0em;}
+
 a {
 	@include unstyled-link;
 	&:hover { color: rgba($c1, 0.8); }

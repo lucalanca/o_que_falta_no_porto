@@ -1,0 +1,55 @@
+@import "compass";
+@import "susy";
+
+@import "bourbon";
+@import "grid";
+@import "colors";
+@import "typography";
+@import "forms";
+
+$headerH: 600px;
+
+@mixin imageBackground($url){
+	background: url($url) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.image-wrapper {
+	width: 100%;
+}
+.image1 { @include imageBackground("./5-blur.png") }
+.image2 { @include imageBackground("./6-blur.png") }
+
+.header { 
+	@include pad(2,2,12); @include span-columns(8,12); margin: $headerH*0.4 auto; 
+	img { display:block; margin:auto; } 
+}
+
+.sponsor { @include span-columns(3,12); margin-top: 5px; margin-bottom: 5px;}
+
+
+
+
+// --------
+// OLD
+// --------
+
+.full-height {
+	height: 100%;
+}
+
+.right-zone {padding: 0 5px; width: 10%; height: 100%; position: absolute; right: 0; top: 0;}
+
+.vote-link { font-size: 1.2em; }
+
+.box {
+	width: 80%;
+	padding: 15px;
+	margin: 50px auto;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	background: white;
+}
+
+.notice { margin-top: 5px;}

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-OQueFaltaNoPorto::Application.load_tasks
+OQueFaltaEmPortugal::Application.load_tasks

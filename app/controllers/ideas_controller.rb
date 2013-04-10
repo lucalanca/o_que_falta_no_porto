@@ -28,7 +28,7 @@ class IdeasController < ApplicationController
 
     respond_to do |format|
       if @idea.save
-        format.html { redirect_to ideas_url, notice: 'Idea was successfully created.' }
+        format.html { redirect_to ideas_url, notice: "Hooray, a tua ideia foi submetida." }
       else
         format.html { redirect_to ideas_url }
       end

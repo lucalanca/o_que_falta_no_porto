@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: o_que_falta_no_porto_development
+  database: o_que_falta_em_portugal_development
   pool: 5
   username: joao
   password:
@@ -42,7 +42,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: o_que_falta_no_porto_test
+  database: o_que_falta_em_portugal_test
   pool: 5
   username: joao
   password:
@@ -51,7 +51,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: o_que_falta_no_porto_production
+  database: o_que_falta_em_portugal_production
   pool: 5
-  username: o_que_falta_no_porto
+  username: joao
   password:
+  host: localhost

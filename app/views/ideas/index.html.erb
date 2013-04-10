@@ -1,14 +1,14 @@
-<section class="colored-wrapper">
+<header class="image-wrapper image1">
   <section class="grid-wrapper">
     <article class="header">
-      <h1>O que falta no Porto?</h1>
+      <%= image_tag "improvePortoLogo.png" %>
       <%= render 'form' %>
-      <p id="notice"><%= notice %></p>
-    </article>
-    
+
+      <p id="notice" class="white"><%= notice %></p>
+    </article> 
   </section>
   
-</section>
+</header>
 
 <section class="grid-wrapper">
   <table>
@@ -16,9 +16,9 @@
     <tr>
       <td style="position: relative;">
         <%#= link_to idea do %>
-          <h2><%= idea.description %></h2>
+          <h5 class="text-no-margin"><%= idea.description %></h5>
         <%# end %>
-        <p><small>idea sugerida a <%= idea.created_at.strftime("%d/%m/%Y") %></small></p>
+        <p><small><fb:comments-count href=http://127.0.0.1:3000/ideas/<%= @idea.id %>/></fb:comments-count> comentários</small></p>
         <div class="right-zone">
           <p style="text-align: right; margin: 0;line-height: 80px; font-size: 22px;">
             <a href="#" class="idea-thumbs-down" data-idea="<%= idea.id %>"><span class="vote-link">-</span></a>

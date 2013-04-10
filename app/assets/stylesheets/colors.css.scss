@@ -1,1 +1,29 @@
 $c1: rgba(32,124,202,1);
+
+
+/*PALLETE FOR IMAGE 5*/
+$c51: #fe792c;
+
+/*PALLETE FOR IMAGE 5*/
+$c61: #3c5372;
+$c62: #9ea9b9;
+$c63: #798d98;
+
+
+.c61 { color: $c61; }
+.c62 { color: $c62; }
+.c63 { color: $c63; }
+
+$placeholderOpacity: 0.6;
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: rgba($c51, $placeholderOpacity);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: rgba($c51, $placeholderOpacity);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: rgba($c51, $placeholderOpacity);
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: rgba($c51, $placeholderOpacity);
+}

@@ -1,5 +1,7 @@
-OQueFaltaNoPorto::Application.routes.draw do
-  resources :ideas, :only => [:index] do
+OQueFaltaEmPortugal::Application.routes.draw do
+  get "static/about"
+
+  resources :ideas do
     post 'thumbs_up', :on => :member
     post 'thumbs_down', :on => :member
   end
