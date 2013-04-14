@@ -13,16 +13,3 @@ input[type="text"] {
 
 input:focus { background: rgba(white, 0.9); }
 input:focus[type="text"] { color: $c51; }
-
-
-// OLD
-// input[type="text"] {
-// 	@include border-radius(5px);
-// 	font-size: 26px;
-// 	line-height: 36px;
-// 	border: 0;
-// 	padding: 2% 2%;
-// 	height: 35px;
-// 	width: 96%;
-// 	color: #666;
-// }

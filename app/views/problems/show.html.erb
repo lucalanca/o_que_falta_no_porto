@@ -1,0 +1,12 @@
+<section class="colored-wrapper full-height">
+  <section class="grid-wrapper">
+    <div class="box">
+    	<h2><%= @problem.description %></h2>
+      	<p id="notice"><%= notice %></p>
+
+      	<p><small><fb:comments-count href=http://oquefaltaemportugal.herokuapp.com/problems/<%= @problem.id %>/></fb:comments-count> comentários</small></p>
+      	<div class="fb-comments" data-href="http://oquefaltaemportugal.herokuapp.com/problems/<%= @problem.id %>" data-width="855" data-num-posts="10"></div>
+    </div>
+  </section>
+  
+</section>

@@ -1,11 +1,11 @@
 OQueFaltaEmPortugal::Application.routes.draw do
   get "static/about"
 
-  resources :ideas do
+  resources :problems do
     post 'thumbs_up', :on => :member
     post 'thumbs_down', :on => :member
   end
-  root :to => 'ideas#index'
+  root :to => 'problems#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

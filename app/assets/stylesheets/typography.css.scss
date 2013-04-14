@@ -1,5 +1,5 @@
-$base-font-size: 28px;
-$base-line-height: 42px;
+$base-font-size: 22px;
+$base-line-height: 30px;
 @include establish-baseline;
 
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
@@ -16,18 +16,19 @@ p {
 }
 body {
 	font-family: 'Lato', sans-serif;
-	font-weight: 400;;
+	font-weight: 400;
 }
 p small { font-variant: small-caps; color: #666; }
 
-table{width: 100%; margin-top: 20px;}
+table{ width: 100%; margin: 40px 0; }
 td {
-	&:first-child { border: 0;}
 	border-top: 1px solid #dddddd;
+	padding: 5px 0;
 	h2 {
 		margin-top: 0.5em;
 	}
 }
+.first { border-top: 0; }
 
 .orange { color: $c51;}
 .white {color:white;}
@@ -42,5 +43,6 @@ p {
 
 a {
 	@include unstyled-link;
-	&:hover { color: rgba($c1, 0.8); }
+	font-style:italic;
+	&:hover { color: rgba($c51, 0.8); }
 }

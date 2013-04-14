@@ -1,4 +1,6 @@
-$total-columns: 4;
+$total-columns: 6;
+$column-width: 4em;
+$gutter-width: 1em;
 .grid-wrapper {
   // Establish our default 4-column grid container.
   @include container;

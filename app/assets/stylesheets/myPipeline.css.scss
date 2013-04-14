@@ -7,7 +7,7 @@
 @import "typography";
 @import "forms";
 
-$headerH: 600px;
+$headerH: 960px;
 
 @mixin imageBackground($url){
 	background: url($url) no-repeat center center fixed; 
@@ -30,7 +30,12 @@ $headerH: 600px;
 .sponsor { @include span-columns(3,12); margin-top: 5px; margin-bottom: 5px;}
 
 
-
+footer {
+	width: 100%;
+	padding: 20px 0;
+	background: #d3d3d3;
+	margin: 0;	
+}
 
 // --------
 // OLD
@@ -45,11 +50,7 @@ $headerH: 600px;
 .vote-link { font-size: 1.2em; }
 
 .box {
-	width: 80%;
-	padding: 15px;
-	margin: 50px auto;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	background: white;
+	@include span-columns(12,12);
 }
 
 .notice { margin-top: 5px;}

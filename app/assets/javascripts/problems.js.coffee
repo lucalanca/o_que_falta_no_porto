@@ -2,11 +2,11 @@
 # # All this logic will automatically be available in application.js.
 # # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $ ->
-	$('.idea-thumbs-down').click( (ev) ->
+	$('.problem-thumbs-down').click( (ev) ->
 		ev.preventDefault()
-		id = $(ev.currentTarget).data('idea')
+		id = $(ev.currentTarget).data('problem')
 		$.post(
-			'ideas/'+id+'/thumbs_down',
+			'problems/'+id+'/thumbs_down',
 			dataType: 'json',
 			success: (data) ->
 				oldVal = parseInt($('[data-plusminus-id='+id+']').html())
@@ -15,11 +15,11 @@ $ ->
 	)
 
 
-	$('.idea-thumbs-up').click( (ev) ->
+	$('.problem-thumbs-up').click( (ev) ->
 		ev.preventDefault()
-		id = $(ev.currentTarget).data('idea')
+		id = $(ev.currentTarget).data('problem')
 		$.post(
-			'ideas/'+id+'/thumbs_up',
+			'problems/'+id+'/thumbs_up',
 			dataType: 'json',
 			success: (data) ->
 				oldVal = parseInt($('[data-plusminus-id='+id+']').html())

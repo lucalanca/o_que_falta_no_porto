@@ -1,4 +1,4 @@
-class Idea < ActiveRecord::Base
+class Problem < ActiveRecord::Base
 
   attr_accessible :description
 
