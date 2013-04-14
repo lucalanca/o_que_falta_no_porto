@@ -22,6 +22,7 @@ p small { font-variant: small-caps; color: #666; }
 
 table{width: 100%; margin-top: 20px;}
 td {
+	&:first-child { border: 0;}
 	border-top: 1px solid #dddddd;
 	h2 {
 		margin-top: 0.5em;

@@ -18,7 +18,7 @@
         <%= link_to idea do %>
           <h5 class="text-no-margin"><%= idea.description %></h5>
         <% end %>
-        <p><small><fb:comments-count href=http://127.0.0.1:3000/ideas/<%= @idea.id %>/></fb:comments-count> comentários</small></p>
+        <p><small><fb:comments-count href=http://oquefaltaemportugal.herokuapp.com/ideas/<%= @idea.id %>/></fb:comments-count> comentários</small></p>
         <div class="right-zone">
           <p style="text-align: right; margin: 0;line-height: 80px; font-size: 22px;">
             <a href="#" class="idea-thumbs-down" data-idea="<%= idea.id %>"><span class="vote-link">-</span></a>
