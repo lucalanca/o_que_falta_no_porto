@@ -17,11 +17,11 @@
     <tr>
       <td style="position: relative;" class="<%= 'first' if i == 0 %>">
         <%= link_to problem do %>
-          <h5 class="text-no-margin"><%= problem.description %></h5>
+          <h4 class="text-no-margin"><%= problem.description %></h4>
         <% end %>
-        <p><small>
-          <fb:comments-count href=http://oquefaltaemportugal.herokuapp.com/problems/<%= @problem.id %>/></fb:comments-count> comentários
-        </small></p>
+        <p style="font-size: 16px;">
+          <fb:comments-count href=http://oquefaltaemportugal.herokuapp.com/problems/<%= @problem.id %>/></fb:comments-count> COMENTÁRIOS
+        </p>
         <div class="right-zone">
           <p style="text-align: right; margin: 0;line-height: 80px; font-size: 22px;">
             <a href="#" class="problem-thumbs-down" data-problem="<%= problem.id %>"><span class="vote-link">-</span></a>
