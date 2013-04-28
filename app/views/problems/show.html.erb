@@ -1,3 +1,5 @@
+<% content_for :title, @problem.description %>
+
 <section class="colored-wrapper full-height">
   <section class="grid-wrapper">
     <div class="box">
@@ -19,3 +21,11 @@
   </section>
   
 </section>
+
+<footer class="sticky">
+  <div class="grid-wrapper">
+    <%= link_to root_path, style: "float: right;" do %>
+      <%= image_tag "logo-small.png" %>
+    <% end %>
+  </div>
+</footer>

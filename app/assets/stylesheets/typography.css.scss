@@ -14,9 +14,15 @@ p {
 	font-weight: 100;
 	color: #222;	
 }
+
+p strong { 
+	font-weight: 300;
+	color: #222;
+}
+
 body {
 	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	font-weight: 100;
 }
 p small { font-variant: small-caps; color: #666; }
 
@@ -36,7 +42,7 @@ td {
 .text-no-margin { margin-top: 0;}
 
 p {
-	strong { font-weight: 400;}
+	strong { font-weight: 300;}
 	em { color: $c63; font-weight: 400; font-style: none;}
 }
 * {-webkit-margin-before: 0em; -webkit-margin-after: 0em;}

@@ -1,3 +1,5 @@
+<% content_for :title, "O que falta em Portugal" %>
+
 <header class="image-wrapper image1">
   <section class="grid-wrapper">
     <article class="header">
@@ -34,4 +36,20 @@
   </table>
 </section>
 
+<footer>
+  <div class="grid-wrapper">
+    <h4>Sobre &quot;O que falta em Portugal&quot;</h4>
+    <p>Este projecto foi inspirado no <a href="#">O que Falta em Coimbra</a>, e pretende ser o ponto de partida para fazermos de Portugal um país melhor. Tens um problema na tua cidade ou país? Então este site é para ti.</p>
 
+    <h4>O que acontece aos problemas aqui listados?</h4>
+    <p>Cada problema tem associado uma conversa que poderá (e deverá) ser usada para discutir soluções e resoluções do mesmo. Quem quiser solucionar os problemas poderá assim contar com a ajuda da comunidade.</p>
+
+    <h4>Agradecimentos</h4>
+    <%= link_to "http://oquefaltaemcoimbra.pt/", style: "margin-right: 20px;" do %>
+      <%= image_tag "oqfcoimbra.png" %>
+    <% end %>
+    <%= link_to "http://oquefaltaemcoimbra.pt/" do %>
+      <%= image_tag "oposw.png" %>
+    <% end %>
+  </div>
+</footer>
