@@ -6,7 +6,7 @@ OQueFaltaEmPortugal::Application.routes.draw do
     post 'thumbs_down', :on => :member
   end
   root :to => 'problems#index'
-  match "/improve-porto" => "static#about"
+  match "/improve-portugal" => "static#about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
