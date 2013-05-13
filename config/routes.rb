@@ -1,12 +1,19 @@
 OQueFaltaEmPortugal::Application.routes.draw do
+
+  root :to => 'problems#index'
+  match "/improve-portugal" => "static#about"
+  
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   get "static/about"
 
   resources :problems do
     post 'thumbs_up', :on => :member
     post 'thumbs_down', :on => :member
   end
-  root :to => 'problems#index'
-  match "/improve-portugal" => "static#about"
+  
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -55,3 +55,4 @@ gem 'compass', '>= 0.13.alpha.0'
 gem 'bourbon'
 gem 'compass-rails'
 gem "susy", "~> 1.0.rc.1"
+gem 'activeadmin'
