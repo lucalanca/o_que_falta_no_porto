@@ -30,6 +30,8 @@ $headerH: 960px;
 .sponsor { @include span-columns(3,12); margin-top: 5px; margin-bottom: 5px;}
 
 
+
+
 footer {
 	width: 100%;
 	padding: 20px 0;
@@ -47,7 +49,21 @@ footer {
 	height: 100%;
 }
 
-.right-zone {padding: 0 5px; width: 10%; height: 100%; position: absolute; right: 0; top: 0;}
+.right-zone {
+	padding: 0 5px; width: 70px; height: 100%; position: absolute; right: 0; top: 0;
+	.right-zone-wrapper {
+		
+		position: relative; width: 100%; height: 100%; 
+		text-align: right; margin: 0;line-height: 90px; font-size: 22px;
+
+		.label { text-align: center; font-weight:700;font-size:12px; line-height: 12px; position: absolute; bottom: 5px; left: 0; right: 0;}
+		.problem-thumbs-down, .problem-thumbs-up { position: absolute; top: 0; bottom: 0; width: 15px;}
+		strong { position: absolute; top: 0; bottom: 0; left: 15px; right: 0; text-align: center; width: 40px;}
+		.problem-thumbs-down { left: 0; }
+		.problem-thumbs-up {  right: 0; }
+		
+	}
+}
 
 .vote-link { font-size: 1.2em; }
 
